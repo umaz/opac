@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="opac.css">
+     <title>検索</title>
+     <script>
+     function add()
+     {
+       var div_element = document.createElement("div");
+       div_element.innerHTML = 
+       '<div class="search"><select class="field" name="field"><option value="any" selected>全ての項目から</option><option value="title">書名</option><option value="author">著者名</option><option value="pub">出版者名</option><option value="ed">版表示</option><option value="series">シリーズ名</option><option value="year">出版年</option><option value="page">ページ数</option><option value="size">大きさ</option><option value="isbn">ISBN</option><option value="nbc">全国書誌番号</option><option value="note">注記</option><option value="holdingsrecord">所在情報識別番号</option><option value="holdingloc">所在情報</option></select> <input type="text" class="keyword_detail" name="keyword"　placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください">  <select class="condition" name="condition"> <option value="all" selected>すべて含む</option><option value="once">いずれかを含む</option><option value="start">始まる</option><option value="equal">一致する</option><option value="not">いずれも含まない</option></select> <select class="terms" name="terms"><option value="and" selected>かつ(AND)</option><option value="or">または(OR)</option></select></div>'
+       var parent_object = document.getElementById("piyo");
+       parent_object.appendChild(div_element);
+     }
+     </script>
+   </head>
+   <body>
+     <h1 class="title">OPAC蔵書検索システム</h1>
+     <ul class="tabs">
+      <li>
+        <input type="radio" name="tabs" id="tab1" checked />
+        <label for="tab1">簡易検索</label>
+        <div id="tab-content1" class="tab-content">
+          <form method="GET" action="opac-easy_search.cgi" onSubmit="if(this.keyword_easy.value==''){return false}">
+             <input type="text" name="keyword_easy" size="50" class="keyword_easy" placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください"> 
+             <input type="submit" value="検索" class="button_easy">
+             <input type="reset" value="クリア" class="button_easy">
+             <input type="hidden" value="1" name="p">
+          </form> 
+        </div>
+      </li>
+ 
+      <li>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2">詳細検索</label>
+        <div id="tab-content2" class="tab-content">
+           <form method="GET" action="opac-detail_search.cgi">
+             <div class="search">
+                <select class="field" name="field">
+                  <option value="any" selected>全ての項目から</option>
+                  <option value="title">書名</option>
+                  <option value="author">著者名</option>
+                  <option value="pub">出版者名</option>
+                  <option value="ed">版表示</option>
+                  <option value="series">シリーズ名</option>
+                  <option value="year">出版年</option>
+                  <option value="page">ページ数</option>
+                  <option value="size">大きさ</option>
+                  <option value="isbn">ISBN</option>
+                  <option value="nbc">全国書誌番号</option>
+                  <option value="note">注記</option>
+                  <option value="holdingsrecord">所在情報識別番号</option>
+                  <option value="holdingloc">所在情報</option>
+                </select>
+                <input type="text" name="keyword" class="keyword_detail"　placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください">
+                <select class="condition" name="condition">
+                  <option value="all" selected>すべて含む</option>
+                  <option value="once">いずれかを含む</option>
+                  <option value="start">始まる</option>
+                  <option value="equal">一致する</option>
+                  <option value="not">いずれも含まない</option>
+　　　　　　　　　　　　　　　　</select>
+              </div>
+             <div class="search">
+                <select name="field" class="field" >
+                  <option value="any" selected>全ての項目から</option>
+                  <option value="title">書名</option>
+                  <option value="author">著者名</option>
+                  <option value="pub">出版者名</option>
+                  <option value="ed">版表示</option>
+                  <option value="series">シリーズ名</option>
+                  <option value="year">出版年</option>
+                  <option value="page">ページ数</option>
+                  <option value="size">大きさ</option>
+                  <option value="isbn">ISBN</option>
+                  <option value="nbc">全国書誌番号</option>
+                  <option value="note">注記</option>
+                  <option value="holdingsrecord">所在情報識別番号</option>
+                  <option value="holdingloc">所在情報</option>
+                </select>
+                <input type="text" name="keyword" class="keyword_detail"　placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください">
+                <select class="condition" name="condition">
+                  <option value="all" selected>すべて含む</option>
+                  <option value="once">いずれかを含む</option>
+                  <option value="start">始まる</option>
+                  <option value="equal">一致する</option>
+                  <option value="not">いずれも含まない</option>
+　　　　　　　　　　　　　　　　</select>
+              <select class="terms" name="terms">
+                <option value="and" selected>かつ(AND)</option>
+                <option value="or">または(OR)</option>
+              </select>
+              </div>
+             <div class="search">
+                <select name="field" class="field" >
+                  <option value="any" selected>全ての項目から</option>
+                  <option value="title">書名</option>
+                  <option value="author">著者名</option>
+                  <option value="pub">出版者名</option>
+                  <option value="ed">版表示</option>
+                  <option value="series">シリーズ名</option>
+                  <option value="year">出版年</option>
+                  <option value="page">ページ数</option>
+                  <option value="size">大きさ</option>
+                  <option value="isbn">ISBN</option>
+                  <option value="nbc">全国書誌番号</option>
+                  <option value="note">注記</option>
+                  <option value="holdingsrecord">所在情報識別番号</option>
+                  <option value="holdingloc">所在情報</option>
+                </select>
+                <input type="text" name="keyword" class="keyword_detail"　placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください">
+                <select class="condition" name="condition">
+                  <option value="all" selected>すべて含む</option>
+                  <option value="once">いずれかを含む</option>
+                  <option value="start">始まる</option>
+                  <option value="equal">一致する</option>
+                  <option value="not">いずれも含まない</option>
+　　　　　　　　　　　　　　　　</select>
+              <select class="terms" name="terms">
+                <option value="and" selected>かつ(AND)</option>
+                <option value="or">または(OR)</option>
+              </select>
+              </div>
+             <div class="search">
+                <select name="field" class="field" >
+                  <option value="any" selected>全ての項目から</option>
+                  <option value="title">書名</option>
+                  <option value="author">著者名</option>
+                  <option value="pub">出版者名</option>
+                  <option value="ed">版表示</option>
+                  <option value="series">シリーズ名</option>
+                  <option value="year">出版年</option>
+                  <option value="page">ページ数</option>
+                  <option value="size">大きさ</option>
+                  <option value="isbn">ISBN</option>
+                  <option value="nbc">全国書誌番号</option>
+                  <option value="note">注記</option>
+                  <option value="holdingsrecord">所在情報識別番号</option>
+                  <option value="holdingloc">所在情報</option>
+                </select>
+                <input type="text" name="keyword" class="keyword_detail"　placeholder="検索するキーワードを入力してください" pattern="^[\S].*" title="キーワードを入力してください">
+                <select class="condition" name="condition">
+                  <option value="all" selected>すべて含む</option>
+                  <option value="once">いずれかを含む</option>
+                  <option value="start">始まる</option>
+                  <option value="equal">一致する</option>
+                  <option value="not">いずれも含まない</option>
+　　　　　　　　　　　　　　　　</select>
+              <select class="terms" name="terms">
+                <option value="and" selected>かつ(AND)</option>
+                <option value="or">または(OR)</option>
+              </select>
+              </div>
+              <div id="piyo">
+              </div>
+              <input type="hidden" value="1" name="p">
+              <input type="submit" value="検索" class="button_detail">
+              <input type="reset" value="全ての条件をクリア" class="button_detail">
+           </form>
+           <div>
+              <button onclick="add();" class="search_box">検索ボックスを増やす</button>
+           </div>
+        </div>
+      </li>
+   </body>
+ </html>

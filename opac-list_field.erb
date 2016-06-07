@@ -1,0 +1,46 @@
+<%# coding: UTF-8 %>
+<html>
+  <head>
+    <link rel="stylesheet" href="opac-list.css">
+    <title>検索結果</title>
+  </head>
+  <body>
+    <h1><a href="opac.html" style="color:#000000;text-decoration:none">OPAC蔵書検索システム</a></h1>
+    <hr>
+    <h2>検索結果書誌一覧</h2>
+    <p>該当件数: <%=result.size%>件 (<%=time%>秒)</p>
+    <table class="table">
+      <tr>
+        <th class="no">No.</th>
+        <th class="title">書名</th>
+        <th class="series">シリーズ名</th>
+        <th class="author">著者名</th>
+        <th class="pub">出版者</th>
+        <th class="year">出版年</th>
+      </tr>
+    <%result[(p-1)*20, 20].each_with_index do |x, n|%>
+    <%if x == nil%>
+      <%break%>
+    <%else%>
+      <tr>
+        <td class="no"><%=(p - 1) * 20 + n + 1%></td>
+        <td class="title"><a href="opac-detail.cgi?nbc=<%= x[0] %>"><%=x[1]%><%=x[2]%>　<%=x[3]%></a></td>
+        <td class="series"><a href="opac-field_search.cgi?type=series&name=<%=x[4]%>&p=1"><%=x[4]%><%=x[5]%></a></td>
+        <td class="author"><%=x[6]%></td>
+        <td class="pub"><a href="opac-field_search.cgi?type=pub&name=<%=x[8]%>&p=1"><%=x[8]%></a></td>
+        <td class="year"><%=x[9]%>.<%=x[10]%></td>
+      </tr>
+    <%end%>
+    <%end%>
+    </table>
+    <%if p > 1%>
+    <a href="opac-field_search.cgi?<%= url %>&p=<%= p-1 %>">前の20件を表示</a>
+    <%end%>
+    <%if result.size > p * 20%>
+    <a href="opac-field_search.cgi?<%= url %>&p=<%= p+1 %>">次の20件を表示</a>
+    <%end%>
+    <form class="top">
+    　　<input type="button" onclick="location.href='opac.html'"value="トップページへ" class="top">
+    </form>
+  </body>
+</html>

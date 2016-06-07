@@ -1,0 +1,154 @@
+<%# coding: UTF-8 %>
+<html>
+  <head>
+    <link rel="stylesheet" href="opac-detail.css">
+    <title><%=main[1]%></title>
+  </head>
+  <body>
+<h1><a href="opac.html" style="color:#000000;text-decoration:none">OPAC蔵書検索システム</a></h1>
+    <hr>
+    <h2>検索結果書誌詳細</h2>
+　　　　<h3><%=main[1]%><%=main[2]%></h3>
+    <h4><%=main[0]%></h4>
+    <table>
+      <tr>
+        <th><%=header[1]%></th>
+        <td><%=main[1]%><%=main[2]%></td>
+      </tr>
+      <%n = 0%>
+      <%main[3].each do |x|%>
+      <%if n == 0%> 
+      <tr>
+        <th><%=header[2]%></th>
+        <td><%=x%></td>
+      <% n = n + 1%>
+      </tr>
+      <%else%>
+      <tr>
+        <th></th>
+        <td><%=x%></td>
+      </tr>
+      <%end%>
+      <%end%>
+      <%if main[4] == nil%>
+      <%else%>
+      <tr>
+        <th><%=header[3]%></th>
+        <td><a href="opac-field_search.cgi?type=series&name=<%=main[4]%>&p=1"><%=main[4]%><%=main[5]%></a></td>
+      </tr>
+      <%end%>
+      <%if main[6] == nil%>
+      <%else%>
+      <tr>
+        <th><%=header[4]%></th>
+        <td><%=main[6]%></th>
+      </tr>
+      <%end%>
+      <%if main[7][0] == nil%>
+      <%else%>
+      <%n = 0%>
+      <%main[7].each do |x|%>
+      <%if n == 0%>
+      <%if x[1] == ""%>
+      <tr>
+        <th><%=header[5]%></th>
+        <td><a href="opac-field_search.cgi?type=author&name=<%=x[0]%>&p=1"><%=x[0]%></a></td>
+      <%n = n + 1%>
+      </tr>
+      <%else%>
+      <tr>
+        <th><%=header[5]%></th>
+        <td><a href="opac-field_search.cgi?type=author&name=<%=x[0]%>&p=1"><%=x[0]%> (<%=x[1]%>)</a></td>
+      <%n = n + 1%>
+      </tr>
+      <%end%>
+      <%else%>
+      <%if x[1] == ""%>
+      <tr>
+        <th></th>
+        <td><a href="opac-field_search.cgi?type=author&name=<%=x[0]%>&p=1"><%=x[0]%></a></td>
+      </tr>
+      <%else%>
+      <tr>
+        <th></th>
+        <td><a href="opac-field_search.cgi?type=author&name=<%=x[0]%>&p=1"><%=x[0]%> (<%=x[1]%>)</a></td>
+      </tr>
+      <%end%>
+      <%end%>
+      <%end%>
+      <%end%>
+      <tr>
+        <th><%=header[7]%></th>
+        <td><a href="opac-field_search.cgi?type=pub&name=<%=main[9]%>&p=1"><%=main[8]%> : <%=main[9]%></a></td>
+      </tr>
+      <tr>
+        <th><%=header[8]%></th>
+        <td><%=main[10]%>.<%=main[11]%></td>
+      </tr>
+      <tr>
+        <th><%=header[9]%></th>
+        <td><%=main[12]%></td>
+      </tr>
+      <tr>
+        <th><%=header[10]%></th>
+        <td><%=main[13]%></td>
+      </tr>
+      <%if main[14][0] == nil%>
+      <%else%>
+      <%n = 0%>
+      <%main[14].each do |x|%>
+      <%if n == 0%>
+      <tr>
+        <th><%=header[11]%></th>
+        <td><%=x%></td>
+      <%n = n + 1%>
+      </tr>
+      <%else%>
+      <tr>
+        <th></th>
+        <td><%=x%></td>
+      </tr>
+      <%end%>
+      <%end%>
+      <%end%>
+      <tr>
+        <th><%=header[12]%></th>
+        <td><%=main[15]%></td>
+      </tr>
+      <%if main[16][0] == nil%>
+      <%else%>
+      <%n = 0%>
+      <%main[16].each do |x|%>
+      <% if n == 0%>
+      <tr>
+        <th><%=header[13]%></th>
+        <td><%=x%></td>
+      <%n = n + 1%>
+      </tr>
+      <%else%>
+      <tr>
+        <th></th>
+        <td><%=x%></td>
+      </tr>
+      <%end%>
+      <%end%>
+      <%end%>
+      <tr>
+        <th><%=header[14]%></th>
+        <td><%=main[17]%></td>
+      </tr>
+      <tr>
+        <th><%=header[15]%></th>
+        <td><%=main[18]%></td>
+      </tr>
+    </table>
+    <form>
+      <div class="back">
+        <input type="button" value="検索結果一覧に戻る" onClick="history.back()" class="back">
+      </div>
+      <div class="top">
+  　　　　　　<input type="button" onclick="location.href='opac.html'"value="トップページへ" class="top">
+      </div>
+    </form>
+  </body>
+</html>

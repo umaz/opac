@@ -1,0 +1,114 @@
+NBC: JP20658260
+ISBN: ISBN4-564-60108-3
+TR: 0〜5歳児の運動あそび指導百科 / 前橋明著
+PUB: 大阪 : ひかりのくに, 2004.7
+PHYS: 239p ; 26cm
+TITLEHEADING: 0 5サイジ ノ ウンドウアソビ シドウ ヒャッカ
+AUTHORHEADING: マエハシ, アキラ (前橋, 明)
+HOLDINGSRECORD: JP20658260-01
+HOLDINGLOC: NDL FC32-H359
+*
+NBC: JP20657481
+ISBN: ISBN4-89815-117-5
+TR: 0円ハウス / 坂口恭平著
+PUB: 東京 : リトル・モア, 2004.7
+PHYS: 199p ; 20×20cm
+NOTE: 並列タイトル: Zero yen houses
+NOTE: 奥付のタイトル: ゼロ円ハウス
+NOTE: 英文併記
+TITLEHEADING: 0エン ハウス
+AUTHORHEADING: サカグチ, キョウヘイ (坂口, 恭平)
+HOLDINGSRECORD: JP20657481-01
+HOLDINGLOC: NDL ED16-H16
+*
+NBC: JP20582807
+ISBN: ISBN4-7628-2363-5
+TR: 0歳〜5歳児までのコミュニケーションスキルの発達と診断 : 子ども・親・専門家をつなぐ / B.バックレイ著 ; 丸野俊一監訳
+PUB: 京都 : 北大路書房, 2004.3
+PHYS: 309p ; 21cm
+NOTE: 文献あり
+NOTE: 原タイトル: Children's communication skills.
+TITLEHEADING: 0サイ 5サイジ マデ ノ コミュニケーション スキル ノ ハッタツ ト シンダン
+AUTHORHEADING: Buckley, Belinda
+AUTHORHEADING: マルノ, シュンイチ (丸野, 俊一)
+HOLDINGSRECORD: JP20582807-01
+HOLDINGLOC: NDL SB157-H37
+*
+NBC: JP20627107
+ISBN: ISBN4-86053-024-1
+TR: 0才から6才の幼児スクールガイド. 首都圏版 / オクムラ書店企画・編集
+PUB: 東京 : オクムラ書店, 2004.5
+PHYS: 132p ; 21cm
+TITLEHEADING: 0サイ カラ 6サイ ノ ヨウジ スクール ガイド
+AUTHORHEADING: オクムラ ショテン (オクムラ書店)
+HOLDINGSRECORD: JP20627107-01
+HOLDINGLOC: NDL Y76-H242
+*
+NBC: JP20747626
+ISBN: ISBN4-7631-9601-4
+TR: 0歳からの母親作戦 : 子どもの心と能力は0歳で決まる / 井深大著
+ED: 新装版
+PUB: 東京 : サンマーク出版, 2004.8
+PHYS: 233p ; 20cm
+NOTE: 肖像あり
+TITLEHEADING: 0サイ カラノ ハハオヤ サクセン
+TITLEHEADING: ゼロサイ カラノ ハハオヤ サクセン
+AUTHORHEADING: イブカ, マサル (井深, 大)
+HOLDINGSRECORD: JP20747626-01
+HOLDINGLOC: NDL EF34-H346
+*
+NBC: JP20683636
+ISBN: ISBN4-7973-2821-5
+TR: 0歳からの未来設計 : 子どもの習い事が気になるときに開く本 / 末木佐知著
+PUB: 東京 : ソフトバンクパブリッシング, 2004.10
+PHYS: 247p ; 19cm
+TITLEHEADING: 0サイ カラ ノ ミライ セッケイ
+AUTHORHEADING: スエキ, サチ (末木, 佐知)
+HOLDINGSRECORD: JP20683636-01
+HOLDINGLOC: NDL EF34-H296
+*
+NBC: JP20698642
+ISBN: ISBN4-332-51026-7
+TR: 0歳児・1歳児・2歳児のための乳児保育 / 巷野悟郎，植松紀子編著
+PUB: 東京 : 光生館, 2004.4
+PHYS: 241p ; 21cm
+NOTE: 文献あり
+TITLEHEADING: 0サイジ 1サイジ 2サイジ ノ タメノ ニュウジ ホイク
+AUTHORHEADING: コウノ, ゴロウ (巷野, 悟郎)
+AUTHORHEADING: ウエマツ, ノリコ (植松, 紀子)
+HOLDINGSRECORD: JP20698642-01
+HOLDINGLOC: NDL EG57-H269
+*
+NBC: JP20539031
+ISBN: ISBN4-569-63015-4
+TR: 0歳児の心の秘密がわかる本 : 赤ちゃんて、どうして泣きやんでくれないの？ / H.ヴァン・デ・リート，F.プローイュ著 ; 川本英明訳
+PUB: 東京 : PHP研究所, 2004.1
+PHYS: 315p ; 20cm
+NOTE: 原タイトル: Oei,ik groei!
+NOTE: 原タイトル: The wonder weeks. 抄訳
+TITLEHEADING: 0サイジ ノ ココロ ノ ヒミツ ガ ワカル ホン
+AUTHORHEADING: Vanderijt, Hetty.
+AUTHORHEADING: Plooij, Frans X.
+AUTHORHEADING: カワモト, ヒデアキ (川本, 英明)
+HOLDINGSRECORD: JP20539031-01
+HOLDINGLOC: NDL SB157-H30
+*
+NBC: JP20649548
+ISBN: ISBN4-433-21984-3
+TR: 1000万円をこえる高額納税者全覧. 近畿版 平成16年5月調査
+PUB: 大阪 : 清文社, 2004.7
+PHYS: 8,363p ; 27cm
+NOTE: 大阪国税局管内(近畿地方2府4県)
+TITLEHEADING: 1000マンエン オ コエル コウガク ノウゼイシャ ゼンラン キンキバン ヘイセイ 16ネン 5ガツ チョウサ
+HOLDINGSRECORD: JP20649548-01
+HOLDINGLOC: NDL D4-H306
+*
+NBC: JP20543418
+ISBN: ISBN4-8067-1277-9
+TR: 1000万人が反グローバリズムで自給・自立できるわけ : スローライフ大国キューバ・リポート / 吉田太郎著
+PUB: 東京 : 築地書館, 2004.1
+PHYS: 577p ; 19cm
+TITLEHEADING: 1000マンニン ガ ハン グローバリズム デ ジキュウ ジリツ デキル ワケ
+AUTHORHEADING: ヨシダ, タロウ (吉田, 太郎)
+HOLDINGSRECORD: JP20543418-01
+HOLDINGLOC: NDL GH393-H3

@@ -1,0 +1,69 @@
+<%# coding: UTF-8 %>
+<html>
+  <head>
+    <link rel="stylesheet" href="opac-list.css">
+    <title>検索結果</title>
+  </head>
+  <body>
+    <h1><a href="opac.html" style="color:#000000;text-decoration:none">OPAC蔵書検索システム</a></h1>
+      <form method="GET" action="opac.cgi">
+        <div class="search">
+          <select class="field" name="field">
+            <option value="any" selected>全ての項目から</option>
+            <option value="title">書名</option>
+            <option value="author">著者名</option>
+            <option value="pub">出版者名</option>
+            <option value="ed">版表示</option>
+            <option value="series">シリーズ名</option>
+            <option value="page">ページ数</option>
+            <option value="size">大きさ</option>
+            <option value="isbn">ISBN</option>
+            <option value="nbc">全国書誌番号</option>
+            <option value="note">注記</option>
+            <option value="holdingsrecord">所在情報識別番号</option>
+            <option value="holdingloc">所在情報</option>
+          </select>
+            <input type="text" name="keyword" class="keyword_detail"　placeholder="検索するキーワードを入力してください">
+            <select class="condition" name="condition">
+              <option value="all" selected>すべて含む</option>
+              <option value="once">いずれかを含む</option>
+              <option value="start">始まる</option>
+              <option value="equal">一致する</option>
+              <option value="not">いずれも含まない</option>
+　　　　　　　　　　　　</select>
+            <input type="submit" value="絞り込み検索" class="button_detail">
+            <input type="hidden" value="1" name="p">
+          </div>
+        </form>
+    <hr>
+    <h2>検索結果書誌一覧</h2>
+    <p>該当件数: <%=result.size%>件 (<%=time%>秒)</p>
+    <table class="table">
+      <tr>
+        <th class="no">No.</th>
+        <th class="title">書名</th>
+        <th class="series">シリーズ名</th>
+        <th class="author">著者名</th>
+        <th class="pub">出版者</th>
+        <th class="year">出版年</th>
+      </tr>
+    <%result[(p-1)*20, 20].each_with_index do |x, n|%>
+    <%if x == nil%>
+      <%break%>
+    <%else%>
+      <tr>
+        <td class="no"><%=(p - 1) * 20 + n + 1%></td>
+        <td class="title"><a href="opac-detail.cgi?nbc=<%= x[0] %>"><%=x[1]%><%=x[2]%>　<%=x[3]%></a></td>
+        <td class="series"><%=x[4]%><%=x[5]%></td>
+        <td class="author"><%=x[6]%></td>
+        <td class="pub"><%=x[8]%></td>
+        <td class="year"><%=x[9]%>.<%=x[10]%></td>
+      </tr>
+    <%end%>
+    <%end%>
+    </table>
+    <form class="top">
+    　　<input type="button" onclick="location.href='opac.html'"value="トップページへ" class="top">
+    </form>
+  </body>
+</html>

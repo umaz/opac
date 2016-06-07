@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+body {
+  padding: 20px;
+  background: #dcdcdc;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+table {
+table-layout: fixed;
+width: 100%;
+border: 2px #336699 solid;
+border-collapse: collapse;
+}
+
+caption {
+text-align: left;
+}
+
+td {
+border: 1px #ccc solid;
+border-width: 1px 0px;
+padding: 5px 5px;
+background-color: #FBFBFB;
+text-align: left;
+vertical-align: center;
+}
+
+th {
+border: 1px #7FB1E0 double;
+padding: 5px 0;
+background-color: #EDF4FA;
+text-align: center;
+vertical-align: center;
+}  
+
+.no {
+width: 40px;
+text-align: center;
+background-color: #ECECEC;
+}
+
+.title {
+width: 450px;
+}
+
+.series {
+width: 100px;
+}
+
+.author {
+width: 300px;
+}
+
+.pub {
+width: 180px;
+}
+
+.year {
+width: 80px;
+}

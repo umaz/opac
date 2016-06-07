@@ -1,0 +1,30 @@
+<%# coding: UTF-8 %>
+ <html>
+   <head>
+     <link rel="stylesheet" href="opac-result.css">
+     <title>検索結果</title>
+   </head>
+   <body>
+     <p><% field.each do |x|%>
+          <%=x%><br>
+        <% end %>
+     </p>
+     <p><%keyword.each do |x|%>
+          <%=x%><br>
+        <% end %>
+     </p>
+     <p><% condition.each do |x|%>
+          <%=x%><br>
+        <% end %>
+     </p>
+     <p><% terms.each do |x|%>
+          <%=x%><br>
+        <% end %>
+     </p>
+     <p><% year.each do |x| %>
+          <%=x%><br>
+        <% end %>
+     </p>
+     <p><%=search%></p>
+   </body>
+ </html>
