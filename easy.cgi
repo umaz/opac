@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/home/umaz/.anyenv/envs/rbenv/shims/ruby
 # -*- coding: utf-8 -*-
 
 require("sqlite3")
